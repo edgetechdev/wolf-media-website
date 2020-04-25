@@ -1,0 +1,36 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.4rem;
+        border-radius: none;
+        cursor: pointer;
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: white;
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolutes;
+        top:0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+}

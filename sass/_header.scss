@@ -2,7 +2,7 @@
     height: 123vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary, 0.8),
+        rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8));
 
         background-position: cover;
@@ -20,7 +20,7 @@
 
         &__text-box {
             position: absolute;
-            top: 40%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;

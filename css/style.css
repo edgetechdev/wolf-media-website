@@ -20,9 +20,39 @@ body {
     font-weight: 700;
     letter-spacing: .2rem; }
 
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.4rem;
+  border-radius: none;
+  cursor: pointer; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: white; }
+  .btn--green::after {
+    background-color: #55c57a; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolutes;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
 .header {
   height: 123vh;
-  background-image: linear-gradient(to right bottom, rgba(198, 153, 99, 0.8), rgba(178, 132, 81, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
   background-position: cover;
   background-position: top;
   position: relative; }
@@ -34,7 +64,7 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
